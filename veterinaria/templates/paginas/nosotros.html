@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block titulo %} Acerca de Nosotros {% endblock %}
+
+{% block contenido%} 
+
+<div class = "container mt-5">
+        <h1>Sobre Nosotros</h1>
+
+        <p> En nuestra veterinaria Miso, nos dedicamos a brindar el mejor cuidado y bienestar a tus mascotas, con años de experiencia y un equipo de profesionales apasionados, 
+            trabajamos cada día para ofrecer atención médica de calidad, basada en el amor y el respeto por los animales.</p>
+        <p> Nuestra misión brindar una atención veterinaria integral con calidad, compromiso y calidez, asegurando la salud y felicidad de cada mascota que nos visita. Nos 
+            esforzamos por ofrecer diagnósticos precisos y tratamientos efectivos, siempre con un enfoque humano y ético.</p>
+        <p> Nuestra visión es ser reconocidos como el centro veterinario de referencia, donde la excelencia en el cuidado animal y el respeto por cada paciente sean 
+            la base de nuestro trabajo. Aspiramos a generar un impacto positivo en la vida de las mascotas y sus familias, promoviendo el bienestar animal en nuestra comunidad .</p>
+</div>
+
+{% load static %}
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'img/vacunas.jpg' %}" class="carousel-img" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'img/esterilizacion.jpg' %}" class="carousel-img" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'img/chequeo.jpg' %}" class="carousel-img" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+{% endblock%}

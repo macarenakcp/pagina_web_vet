@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block titulo %} Inicio {% endblock %}
+
+{% block contenido%} 
+
+<div class="p-5 mb-4 bg-light rounded-3">
+    <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Bienvenidos a la veterinaria Miso</h1>
+        <p class="col-md-8 fs-4">
+            En Miso, cada mascota es parte de nuestra familia. 
+            Somos amantes de los animales comprometidos con brindar atención con cariño, respeto y profesionalismo.
+            Nos esforzamos por crear experiencias positivas en cada visita, porque sabemos
+            que detrás de cada patita hay una historia que merece cuidado y ternura. 
+            Gracias por confiar en nosotros para acompañar a quienes más amas.
+        </p>
+            <a href="{% url 'nosotros' %}" class ="btn-miso">
+                Más sobre nosotros
+            </a>
+    </div>
+</div>
+
+
+
+{% endblock %}

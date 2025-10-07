@@ -1,0 +1,35 @@
+.carousel-img {  /* verde Bootstrap */
+  max-width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn-miso {
+  background-color: #198754;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+
+
+html {
+    overflow-y: scroll; /* para que se vea siempre y no haya diferencia entre las vistas */
+}
+
+::-webkit-scrollbar { /* ancho de la barra del scroll */
+    width: 10px;
+}
+
+::-webkit-scrollbar-track { /* color del fondo */
+    background: #e6f4ea; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #198754; /* color del scroll y bordecito redondo */
+    border-radius: 10px;
+    border: 2px solid #e6f4ea;
+}

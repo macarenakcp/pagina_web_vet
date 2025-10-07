@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block titulo %} Guardar Producto{% endblock %}
+
+{% block contenido%} 
+
+<div class = "container mt-5">
+        <h1>Ingreso de pacientes</h1>
+
+        <p>Completa los siguientes datos para agregar una nueva mascota a nuestro sistema.
+        Este formulario nos ayuda a brindar una atención más personalizada y eficiente.
+        </p>
+</div>
+
+<div class="card">
+    <div class="card-header">Ingresar animal</div>
+    <div class="card-body">
+        <h4 class="card-title">Datos de la mascota</h4>
+        {%  include "vet/formulario.html" %}
+    </div>
+</div>
+
+
+{% endblock%}
