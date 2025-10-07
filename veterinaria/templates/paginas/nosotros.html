@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 
-{% block titulo %} Acerca de Nosotros {% endblock %}
+{% block titulo %} Acerca de Nosotros {% endblock %} <!-- Titulo arribita -->
 
 {% block contenido%} 
 
 <div class = "container mt-5">
-        <h1>Sobre Nosotros</h1>
+        <h1>Sobre Nosotros</h1> <!-- Permite usar imágenes y archivos CSS desde la carpeta static -->
 
         <p> En nuestra veterinaria Miso, nos dedicamos a brindar el mejor cuidado y bienestar a tus mascotas, con años de experiencia y un equipo de profesionales apasionados, 
             trabajamos cada día para ofrecer atención médica de calidad, basada en el amor y el respeto por los animales.</p>
@@ -25,13 +25,13 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="{% static 'img/vacunas.jpg' %}" class="carousel-img" alt="...">
+      <img src="{% static 'img/vacunas.jpg' %}" class="carousel-img" alt="Vacunacion de mascotas">
     </div>
     <div class="carousel-item">
-      <img src="{% static 'img/esterilizacion.jpg' %}" class="carousel-img" alt="...">
+      <img src="{% static 'img/esterilizacion.jpg' %}" class="carousel-img" alt="esterilizacion de mascotas">
     </div>
     <div class="carousel-item">
-      <img src="{% static 'img/chequeo.jpg' %}" class="carousel-img" alt="...">
+      <img src="{% static 'img/chequeo.jpg' %}" class="carousel-img" alt="chequeo de mascotas">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
